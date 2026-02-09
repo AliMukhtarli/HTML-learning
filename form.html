@@ -7,8 +7,31 @@
 </head>
 <body>
     <h1>ad doldurma formu</h1>
-    <form action="ad.php" name="ad" method="get">
-        Isim: <input type="text" name="ad">
+    <form action="ad.php" name="ad" method="get" autocomplete="on">
+        Ad: <input type="text" name="ad" size="30" required placeholder="Ali Mukhtarli">
+        <br>
+        Yas: <input type="number" name="ad" size="30" placeholder="25" >
+        <br>
+        Seherinizi secin:<select name="Sehersecme" id="Sehersecme">
+            <option>Baki</option>
+            <option>Ordubad</option>
+            <option>Semkir</option>
+            <option>Quba</option>
+            <option>Salyan</option>
+            <option selected>Nakhcivan</option>
+        </select>
+        <br>
+        18 yasindan boyuksen? <input type="checkbox" name="yas">
+        <br>
+        Gundlik sosial medi istifade muddetininz:
+         <input type="radio" name="istifademuddeti" value="1"> 1 saatdan az
+        <input type="radio" name="istifademuddeti" value="2"> 2 saatdan az
+        <input type="radio" name="istifademuddeti" value="3"> 3 saatdan az
+        <input type="radio" name="istifademuddeti" value="4> 4 saatdan az 
+        <br>
+        Bize fikirlerinizi yazin: <textarea name="fikirler" cols="20" rows="3"></textarea>
+        <br>
+        <!-- maxlength ise ne qeder yaza bileceyinizi limitlemek ucun istifade olunur-->
         <input type="submit" value="gonder">
         <input type="reset">
 
